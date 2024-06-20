@@ -67,7 +67,9 @@ const Header: React.FC = () => {
 							to="/contact"
 							className={({isActive}) =>
 								`text-lg md:text-xl lg:text-2xl no-underline ${
-									isActive ? "text-primary-active" : "text-primary-text"
+									isActive
+										? "text-primary-active border-bottom-2 border-primary-active"
+										: "text-primary-text"
 								}`
 							}
 						>

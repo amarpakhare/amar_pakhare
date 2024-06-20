@@ -6,7 +6,7 @@ const Home: React.FC = () => {
 		<>
 			<main className="flex items-center justify-center bg-primary-nav text-primary-text p-8 m-4 md:m-10 lg:m-20 rounded-lg">
 				<motion.div
-					className="flex flex-col md:flex-row items-center mt-10 gap-10"
+					className="flex flex-col md:flex-row items-center mt-10 gap-20"
 					initial={{opacity: 0, y: 50}}
 					animate={{opacity: 1, y: 0}}
 					transition={{duration: 0.5}}
@@ -16,7 +16,7 @@ const Home: React.FC = () => {
 							className="text-3xl md:text-4xl font-bold text-primary-content"
 							initial={{opacity: 0}}
 							animate={{opacity: 1}}
-							transition={{duration: 0.5, delay: 1}}
+							transition={{duration: 0.5, delay: 0.2}}
 						>
 							AmarPakhare
 						</motion.h2>
@@ -24,9 +24,12 @@ const Home: React.FC = () => {
 							className="text-md md:text-lg lg:text-xl mt-4"
 							initial={{opacity: 0}}
 							animate={{opacity: 1}}
-							transition={{duration: 0.5, delay: 1.5}}
+							transition={{duration: 0.5, delay: 0.3}}
 						>
-							Welcome to my personal portfolio website!
+							I'm a,{" "}
+							<motion.p className="animate-typing overflow-hidden whitespace-nowrap">
+								FULL STACK WEB DEVELOPER 🚀
+							</motion.p>
 						</motion.p>
 					</div>
 					<motion.img
